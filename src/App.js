@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
+import { useState } from "react";
+import pizzaData from "./data";
+import "./index.css";
 function App() {
+  const [order, setOrder] = useState(pizzaData);
+  function deleteOrder(name) {
+    setOrder((prev) => prev.filter((obj) => obj.name !== name));
+  }
+  function solder(name) {
+    setOrder((prev) =>
+      prev.map((order) =>
+        order.name === name ? { ...order, soldOut: !order.soldOut } : order
+      )
+    );
+  }
+  function plusAndMinus(index,step) {
+
+    setOrder((order) =>
+      order.map((pizza, indexoo) =>
+        index === indexoo ? { ...pizza, price: pizza.price+step } : pizza
+      )
+    );
+  }
+
+  function DeleteAll() {
+    setOrder(order.slice(0, 0));
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      <Menu
+        plusAndMinus={plusAndMinus}
+        sold={solder}
+        delete={deleteOrder}
+        pizzaData={order}
+      />
+      <Footer deleteAll={DeleteAll} />
     </div>
   );
 }
-
-export default App;
+export default App
