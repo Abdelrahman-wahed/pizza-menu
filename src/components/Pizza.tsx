@@ -1,4 +1,14 @@
-const Pizza = (props) => {
+import React from "react";
+
+const Pizza=(props:{
+  index:number,
+        plusAndMinus: (index: number, step: number) => void,
+        sold: (name: string) => void;
+  delete: (name: string) => void;
+        key:number,
+        
+        [key:string]:any
+}) => {
   return (
     <div className={props.soldOut ? "pizza sold-out" : "pizza"}>
       <img src={props.photoName} alt="pizza Order" />

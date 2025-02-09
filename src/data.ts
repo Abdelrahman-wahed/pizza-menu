@@ -1,4 +1,6 @@
-const pizzaData = [
+import { data } from "./components/types/app";
+
+const pizzaData: data[] = [
   {
     deleteAll: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",

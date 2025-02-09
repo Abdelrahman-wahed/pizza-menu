@@ -1,5 +1,14 @@
+import React from "react";
 import Pizza from "./Pizza";
-let Menu = (props) => {
+
+import { data } from "./types/app";
+type menuProps = {
+  plusAndMinus: (index: number, step: number) => void;
+  sold: (name: string) => void;
+  delete: (name: string) => void;
+  pizzaData: data[];
+};
+let Menu = (props:menuProps) => {
   let PizzaList = props.pizzaData.map((pizza, index) => {
     return (
       <Pizza
@@ -9,7 +18,7 @@ let Menu = (props) => {
         delete={props.delete}
         key={index}
         {...pizza}
-            />
+      />
     );
   });
   return (
