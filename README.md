@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🍕 Pizza Menu
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Table of Contents](#table-of-contents)
+- [👋Introduction](#introduction)
+- [🌟Features](#features)
+- [🚀 Live Project](#-live-project)
+- [📸 Screenshots](#-screenshots)
 
-### `npm start`
+- [🛠️Technologies Used](#️technologies-used)
+- [🏁Getting Started](#getting-started)
+- [⬇️Installation](#️installation)
+- [🔧Usage](#usage)
+- [📄License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👋Introduction
 
-### `npm test`
+The Pizza Menu project is a web application that allows users to view and order various types of pizzas. It provides a user-friendly interface to browse the menu, select items, and place orders. The application is built using modern web technologies and aims to deliver a seamless experience for pizza lovers.
+## 🌟Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* View a list of available pizzas with descriptions.
+* Increment Pizza order.
+* Decrement Pizza order.
+* Delete pizza.
+* Delete of all pizzas
 
-### `npm run build`
+## 🚀 Live project
+[🍕 Pizza Menu](https://pizza-menu-mauve-beta.vercel.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  📸 Screenshots
+![](./screenshots/pizza1.png)
+![](./screenshots/pizza2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Pizza Menu project utilizes the following technologies:
 
-### `npm run eject`
+- <img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png" alt="Html" width="40" height="40"/> &nbsp; &nbsp;[Html](https://html.com/)
+- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iZ9fQBGw_J7-7PZ6Fm3xsszjQDJHocu3Zw&s" alt="Css" width="40" height="40"/> &nbsp; &nbsp;[Css](https://www.w3.org/Style/CSS/Overview.en.html)
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"/> &nbsp; &nbsp;[React](https://reactjs.org/)
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> &nbsp; &nbsp;[TypeScript](https://www.typescriptlang.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏁Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To set up the Pizza Menu project locally, follow the instructions below.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⬇️Installation
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To set up the project locally, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
 
-### Code Splitting
+    ```bash
+    git clone https://github.com/Abdelrahman-wahed/pizza-menu.git
+    
+    ```
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    cd pizza-menu
+    
+    ```
+3. Install the required dependencies:
 
-### Analyzing the Bundle Size
+    ```bash
+    npm install
+    
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔧Usage
 
-### Advanced Configuration
+1. Run the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm start
+   ```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Open your browser and go to `http://localhost:3000` to view the application.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
